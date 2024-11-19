@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+:root {
+    --cor-01: #06C;
+    --cor-02: #000;
+    --cor-03: #CCC;
+    --cor-04: #FFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cabecalho {
+    background-color: var(--cor-02);
+    margin-bottom: 20px;
+}
+
+#cabecalho #logo {
+    width: 30px;
+}
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu */
+#menu ul {
+    display: flex;
+}
+
+#menu ul a {
+    color: var(--cor-04);
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    transition: all 0.3s linear;
+}
+
+#menu ul a:hover{
+    background-color: var(--cor-01);
+}
+
+#menu .submenu {
+    position: absolute;
+    display: none;
+    background-color: var(--cor-02);
+    z-index: 1;
+}
+
+#menu li:hover .submenu {
+    display: block;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#historia {
+    margin-bottom: 50px;
+}
+
+#historia img {
+    width: 400px;
+    border-radius: 30px;
+    float: left;
+    margin-right: 20px;
+}
+
+#historia p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#rodape {
+    text-align: center;
+    color: var(--cor-04);
+    padding: 30px;
+    background-color: var(--cor-02);
+}
+
+#fotos #galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+#fotos #galeria img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+#fotos #galeria img:hover {
+    transform: scale(1.1);
+}
+
+#videos #galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+#rodape a {
+    color: var(--cor-04);
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
